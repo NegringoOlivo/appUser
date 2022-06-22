@@ -19,7 +19,7 @@ const body = document.getElementsByTagName("body")[0]
 body.innerHTML = template
 
 }
-const getUsers = async () => {
+const getUsers = async () => { // pendiente 
     const response = await fetch("/users")
     const users = await response.json()
     console.log(users)
@@ -46,8 +46,6 @@ addFormListener = () => {
         })
         userForm.reset()
         getUsers();
-
-
     }
 }
 
